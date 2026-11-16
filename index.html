@@ -3,43 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Debin Xu | Academic Homepage</title>
+<title>Debin Xu</title>
 <style>
-:root{--bg:#f6f8fb;--card:#fff;--text:#172033;--muted:#5b6475;--accent:#2563eb;--line:#e5e7eb}
-*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-main{max-width:860px;margin:0 auto;padding:72px 24px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:42px;box-shadow:0 10px 30px rgba(23,32,51,.06)}
-h1{margin:0 0 6px;font-size:42px;letter-spacing:-.03em} h2{margin-top:34px;font-size:22px}
-.subtitle{color:var(--muted);font-size:18px;margin:0 0 20px}
-p{margin:12px 0}.links a{color:var(--accent);text-decoration:none;margin-right:18px}.links a:hover{text-decoration:underline}
-ul{padding-left:22px}.meta{color:var(--muted);font-size:14px;border-top:1px solid var(--line);margin-top:36px;padding-top:18px}
-@media(max-width:600px){main{padding:24px 14px}.card{padding:26px 22px}h1{font-size:34px}}
+:root{--ink:#222;--muted:#68707d;--accent:#2d6a4f;--paper:#fff;--wash:#f7f7f4;--line:#e7e7e2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--wash);color:var(--ink);font:16px/1.75 Georgia,"Times New Roman",serif}
+.site{max-width:1040px;margin:auto;padding:0 28px}.top{display:flex;justify-content:space-between;align-items:center;padding:28px 0;border-bottom:1px solid var(--line);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}.brand{font-weight:700;font-size:18px}.nav a{color:var(--muted);text-decoration:none;margin-left:24px;font-size:14px}.nav a:hover{color:var(--accent)}
+.hero{display:grid;grid-template-columns:1.6fr 1fr;gap:64px;padding:76px 0 62px;align-items:center}.eyebrow{font:600 13px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}h1{font-size:58px;line-height:1.05;margin:12px 0 18px;font-weight:700;letter-spacing:-.03em}.lead{font-size:21px;color:#41464f;margin:0}.portrait{height:250px;border-radius:8px;background:linear-gradient(145deg,#dfe9e2,#eef2ed);display:flex;align-items:center;justify-content:center;color:var(--accent);font:700 72px Georgia,serif}
+section{padding:42px 0;border-top:1px solid var(--line)}h2{font-size:28px;margin:0 0 18px}p{margin:10px 0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:36px}.item h3{font-size:18px;margin:0 0 5px}.item p{color:var(--muted);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:15px}.links a{color:var(--accent);text-decoration:none;margin-right:22px}.links a:hover{text-decoration:underline}.timeline{display:grid;gap:14px}.timeline div{display:flex;gap:22px}.year{min-width:86px;color:var(--muted);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:14px}
+footer{padding:36px 0 58px;color:var(--muted);font:13px system-ui,-apple-system,"Segoe UI",sans-serif}
+@media(max-width:700px){.hero{grid-template-columns:1fr;gap:28px;padding:52px 0 42px}.portrait{height:150px}h1{font-size:44px}.grid{grid-template-columns:1fr}.nav a{margin-left:12px}}
 </style>
 </head>
 <body>
-<main><article class="card">
-<h1>Debin Xu</h1>
-<p class="subtitle">Master's student · Huazhong University of Science and Technology</p>
-<p>I work on large language model inference acceleration and agent applications, with interests in efficient serving, multi-turn tool agents, and reinforcement learning.</p>
-<div class="links">
-<a href="https://github.com/heitai-x">GitHub</a>
-<a href="https://orcid.org/0009-0002-4053-2389">ORCID</a>
-<a href="https://openreview.net/forum?id=KybWGaMoyy">TIRO on OpenReview</a>
+<div class="site">
+<header class="top"><div class="brand">Debin Xu</div><nav class="nav"><a href="#about">About</a><a href="#research">Research</a><a href="#education">Education</a><a href="#links">Links</a></nav></header>
+<main>
+<section class="hero" id="about" style="border-top:0"><div><div class="eyebrow">Academic homepage</div><h1>Debin Xu</h1><p class="lead">Master's student at Huazhong University of Science and Technology, working on efficient large language models and agentic systems.</p></div><div class="portrait" aria-label="Debin Xu">DX</div></section>
+<section id="research"><h2>Research</h2><div class="grid"><div class="item"><h3>Large language model inference acceleration</h3><p>Efficient serving, systems optimization, and practical methods for faster inference.</p></div><div class="item"><h3>Agent applications</h3><p>Multi-turn tool agents, reinforcement learning, and reliable agentic workflows.</p></div></div></section>
+<section id="education"><h2>Education</h2><div class="timeline"><div><span class="year">2024–2027</span><span>Master's student, Huazhong University of Science and Technology</span></div><div><span class="year">2019–2023</span><span>Undergraduate student, Harbin Engineering University</span></div></div></section>
+<section id="links"><h2>Links</h2><p class="links"><a href="https://github.com/heitai-x">GitHub</a><a href="https://orcid.org/0009-0002-4053-2389">ORCID</a></p></section>
+</main>
+<footer>© 2026 Debin Xu</footer>
 </div>
-<h2>Research</h2>
-<ul>
-<li>Large language model inference acceleration</li>
-<li>Agent applications and multi-turn tool agents</li>
-<li>Efficient serving and reinforcement learning</li>
-</ul>
-<h2>Education</h2>
-<ul>
-<li><strong>Huazhong University of Science and Technology</strong>, Master's student, 2024–2027</li>
-<li><strong>Harbin Engineering University</strong>, Undergraduate student, 2019–2023</li>
-</ul>
-<h2>Selected Publication</h2>
-<p><strong>TIRO: Growing Training-History Trees for Turn-Level Reinforcement Learning of Multi-Turn Tool Agents</strong><br>KDD 2027 Research Track, accepted.</p>
-<p class="meta">This page is maintained by Debin Xu.</p>
-</article></main>
 </body>
 </html>
