@@ -173,6 +173,15 @@
 
     .section p { margin: 0 0 14px; }
 
+    .news-item {
+      display: grid;
+      grid-template-columns: 120px minmax(0, 1fr);
+      gap: 24px;
+    }
+
+    .news-date { color: var(--muted); font-size: 14px; }
+    .news-item p { margin: 0; }
+
     .research-list {
       display: grid;
       gap: 18px;
@@ -234,6 +243,7 @@
       .sidebar-links span { display: none; }
       .intro { margin-bottom: 38px; }
       .intro-lead { font-size: 17px; }
+      .news-item { grid-template-columns: 1fr; gap: 2px; }
       .timeline-item { grid-template-columns: 1fr; gap: 2px; }
     }
 
@@ -250,6 +260,7 @@
       <a class="site-title" href="#about">Debin Xu</a>
       <nav class="nav" aria-label="Primary navigation">
         <a href="#about">About</a>
+        <a href="#news">News</a>
         <a href="#research">Research</a>
         <a href="#work">Selected Work</a>
         <a href="#education">Education</a>
@@ -276,6 +287,14 @@
       <section class="intro" id="about">
         <h1>Debin Xu</h1>
         <p class="intro-lead">I am a master’s student at Huazhong University of Science and Technology. My work focuses on efficient large language model systems, agentic workflows, and reproducible evaluation.</p>
+      </section>
+
+      <section class="section" id="news">
+        <h2>News</h2>
+        <div class="news-item">
+          <div class="news-date">2026</div>
+          <p>One paper has been accepted to the KDD Research Track.</p>
+        </div>
       </section>
 
       <section class="section" id="research">
